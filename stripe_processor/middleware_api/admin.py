@@ -1,4 +1,5 @@
 from django.contrib import admin
-from middleware_api.models import Request
+from middleware_api.models import StripeRequest, StripeResponse
 
-admin.site.register(Request)
+admin.site.register(StripeRequest)
+admin.site.register(StripeResponse)
