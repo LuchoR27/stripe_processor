@@ -7,7 +7,7 @@ def parse_date(data):
 
 def mask(value):
     if len(value) <= 4:
-        value = value.rjust(len(value), "*")
+        value = "*" * len(value)
     else:
         value = value[-4:].rjust(len(value), "*")
     return value
